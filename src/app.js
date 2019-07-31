@@ -7,10 +7,9 @@ const request = require('request');
 
 
 var app = express();
+ 
 
-
-
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 //Define paths for express config
 // variable for public folder
@@ -111,5 +110,5 @@ app.get('*', (req, res) => {
 });
     
 app.listen(port, () => {
-    console.log(`Server started on port`);
+    console.log(`Server started on port`+ port);
 });
